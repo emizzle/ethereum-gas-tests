@@ -119,7 +119,7 @@ describe("Mapping", function () {
       if (elapsed < timeMin.elapsed) {
         timeMin = { elapsed, idx: cnt };
       }
-      if (elapsed > timeMax) {
+      if (elapsed > timeMax.elapsed) {
         timeMax = { elapsed, idx: cnt };
       }
       timeTotal = timeTotal.add(BigNumber.from(elapsed));
